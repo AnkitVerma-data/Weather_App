@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+#video-background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.weather-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.container {
+    text-align: center;
+    z-index: 1;
+    text-align: center;
+    position: relative;
+}
+
+.title {
+    color: #fff;
+    font-size: 5.5em;
+    margin-bottom: 30px;
+}
+.header, .footer {
+    background: #f127110f; 
+    background: -webkit-linear-gradient(to right, #f5af19, #11c0f1);  
+    background: linear-gradient(to right, #f5af1946, rgba(241, 237, 17, 0.39));
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.header h1, .footer p {
+    margin: 0;
+}
+
+.footer {
+    margin-top: 766px; /* Adjust margin as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+.social-links a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.weather-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+    margin: 0 auto;
+}
+
+.weather-info {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.fetch-button {
+    padding: 12px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: navy;
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.fetch-button:hover {
+    background-color: #3729b9;
+}
+
